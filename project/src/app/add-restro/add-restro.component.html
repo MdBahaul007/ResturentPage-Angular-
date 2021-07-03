@@ -1,0 +1,27 @@
+<h2>Add your Resturent</h2>
+<form [formGroup]="addRestreo" (ngSubmit)="collectData()">
+  <div *ngIf="aleart" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Resturent Added!</strong> You have successfully registered your resturent.
+    <button (click)="closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+
+  <div class="form-group">
+    <label>Enter Name</label>
+    <input type="text" class="form-control" placeholder="Please provide name of your Resturent" formControlName="name">
+  </div>
+
+  <div class="form-group">
+    <label>Enter Location/city</label>
+    <input type="text" class="form-control" placeholder="Please provide Location/city of your resturent" formControlName="location">
+  </div>
+
+  <div class="form-group">
+    <label>Speciality</label>
+    <input type="text" class="form-control" placeholder="Please provide  speciality of your Resturent" formControlName="Speciality">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer{
+  background-color: lightskyblue;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  text-align: center;
+}
+footer h3{
+  font-size: 20px;
+}
+.nav-class{
+  background-color: lightgreen;
+  padding: 10px;
+
+}
+li a{
+  color: #fff;
+}
